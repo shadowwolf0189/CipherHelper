@@ -1,0 +1,60 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".WelcomePage"
+    android:background="@drawable/bg"
+    >
+
+    <TextView
+        android:text="~Lovely Ciphers~"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="46sp"
+        android:gravity="center_horizontal"
+        android:id="@+id/txtGreeting"
+        android:textColor="#10DC40"
+        android:layout_marginTop="-10dp"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/kirbyleft"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Pick your Poison"
+            android:textSize="30sp"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtSelection"
+            android:textColor="#10DC80"
+            android:layout_centerInParent="true"/>
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/kirbyright"
+            android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/listCiphers"
+        android:dividerHeight="3dp"
+        android:layout_marginTop="15dp"
+        android:clickable="true"/>
+
+</LinearLayout>

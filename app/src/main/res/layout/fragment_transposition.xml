@@ -1,0 +1,65 @@
+<HorizontalScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.spielpark.steve.cipherhelper.Transposition">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/setUp">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Enter the cipher text."
+                android:maxWidth="250dp"
+                android:minWidth="250dp"
+                android:maxLines="3"
+                android:minLines="3"
+                android:id="@+id/edtCipherText"
+                android:layout_weight="0.8"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:layout_weight="0.2">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="#Columns?"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:maxWidth="80dp"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/edtNumRows"/>
+
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Decipher"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="20dp"
+                    />
+                </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearColumns"
+            android:orientation="horizontal">
+
+    </LinearLayout>
+</LinearLayout>
+</HorizontalScrollView>
